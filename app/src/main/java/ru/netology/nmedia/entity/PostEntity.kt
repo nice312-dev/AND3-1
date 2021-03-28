@@ -26,7 +26,7 @@ data class PostEntity(
         private val sdf: DateFormat = SimpleDateFormat.getDateTimeInstance()
 
         fun fromDto(dto: Post) =
-            PostEntity(dto.id, "Me", dto.content, sdf.format(Date()), dto.likedByMe, dto.likes, dto.shares, dto.views, null)
+            PostEntity(dto.id, "Me", dto.content, sdf.format(Date()), dto.likedByMe, dto.likes, dto.shares, dto.views, dto.videoUrl)
 
     }
 }
